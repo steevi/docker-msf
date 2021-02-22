@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  msf:
+    build:
+      context: docker-msf
+    restart: always
+    entrypoint: sleep 7200
+    ports: 
+      - "5443:5443"
